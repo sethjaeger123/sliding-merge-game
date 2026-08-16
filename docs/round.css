@@ -1,0 +1,7 @@
+.board-wrap { position: relative; }
+.round-over { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; padding: 30px; color: #fff; background: rgba(61,33,70,.92); backdrop-filter: blur(5px); }
+.round-over[hidden] { display: none; }
+.round-over span { font-size: 52px; }
+.round-over h2 { margin: 6px 0; font-size: 30px; }
+.round-over p { margin: 0 0 18px; }
+.round-over button { justify-self: center; border: 0; border-radius: 12px; padding: 11px 22px; background: #ffd174; color: #593347; font-weight: 900; box-shadow: 0 4px #d7954b; cursor: pointer; }
