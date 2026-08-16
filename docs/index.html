@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f9c66b">
+  <meta name="description" content="Slide, match, and stack tasty treats in this playful 5×5 merge game.">
+  <title>Snack Stack! — 5×5 Merge Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-card" aria-label="Snack Stack merge game">
+      <header>
+        <div><p class="eyebrow">5 × 5 MERGE GAME</p><h1>SNACK<br><span>STACK!</span></h1><p class="tagline">Slide. Match. Feast.</p></div>
+        <div class="score-panel">
+          <div class="score-box"><span>SCORE</span><strong id="score">0</strong></div>
+          <div class="score-box"><span>BEST</span><strong id="best">0</strong><em id="new-best" hidden>NEW!</em></div>
+          <button class="restart" type="button" aria-label="Restart game">↻ <span>Restart</span></button>
+        </div>
+      </header>
+      <div class="quest-bar"><span class="quest-icon">🧋</span><div><small>TODAY’S CRAVING</small><strong>Make a Boba Tea!</strong></div><span class="quest-progress" id="quest">0 / 1</span></div>
+      <div class="board-wrap">
+        <div class="board" id="board" role="grid" aria-label="5 by 5 game board"></div>
+        <div class="game-over" id="game-over" hidden><span>🍽️</span><h2>Kitchen’s full!</h2><p id="final-score"></p><button type="button">Play again</button></div>
+      </div>
+      <div class="instructions"><div class="key-demo"><kbd>↑</kbd><span><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></span></div><p><strong>HOW TO PLAY</strong>Swipe or use arrow keys to slide.<br>Match two snacks to make a tastier one!</p></div>
+      <p class="tip"><span>✦</span> Keep a high-level snack tucked in a corner.</p>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
